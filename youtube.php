@@ -3,8 +3,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 class youtube{
 	
 	private $auth_key;
-	//private $OAUTH2_CLIENT_ID = '676226171393-h21e999k1452op257mjm4gi7navklbmt.apps.googleusercontent.com';
-	//private $OAUTH2_CLIENT_SECRET = 'R7mbwcKUJoEe6sPcIhL3qqw-';
 	private $OAUTH2_CLIENT_ID = '592316429034-1hugk5lin1nh8165327c9vbq8eduvdri.apps.googleusercontent.com';
 	private $OAUTH2_CLIENT_SECRET = 'upEoXEOQ_bHV-qcB64_cdtyG';
 	
