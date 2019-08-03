@@ -1,12 +1,12 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-class youtube{
+class youtube_upload{
 	
 	private $auth_key;
 	private $OAUTH2_CLIENT_ID = '592316429034-1hugk5lin1nh8165327c9vbq8eduvdri.apps.googleusercontent.com';
 	private $OAUTH2_CLIENT_SECRET = 'upEoXEOQ_bHV-qcB64_cdtyG';
 	
-	function my_videos(){
+	function list_my_videos(){
 		 $htmlBody = '';
 		 try {
 			$client = new Google_Client();
@@ -55,7 +55,7 @@ class youtube{
 		return $htmlBody;
 	}
 	
-	function my_video_details($video_id){
+	function get_video_detail($video_id){
 		 $htmlBody = '';
 		 try {
 			$client = new Google_Client();
@@ -90,7 +90,7 @@ class youtube{
 		return $htmlBody;
 	}
 	
-	function upload_video($video_path,$title,$description,$tags){
+	function upload_video_to_youtube($video_path,$title,$description,$tags){
 		 $htmlBody = '';
 		 try{
 			$client = new Google_Client();
